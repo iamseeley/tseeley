@@ -11,7 +11,8 @@ const config: Config = {
         'background': 'var(--background)',
         'foreground': 'var(--foreground)',
         'type-primary': 'var(--typeface-primary)',
-        'type-secondary': 'var(--typeface-secondary)'
+        'type-secondary': 'var(--typeface-secondary)',
+        'type-tertiary': 'var(--typeface-tertiary)',
       },
   }
 },

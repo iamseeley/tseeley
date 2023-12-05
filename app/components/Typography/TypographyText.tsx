@@ -14,6 +14,7 @@ const TextStyles = cva( 'font-medium',
         color: {
           primary: 'text-type-primary', // Ensure these classes exist in your Tailwind configuration
           secondary: 'text-type-secondary',
+          tertiary: 'text-type-tertiary',
         },
         spaced: {
           true: 'tracking-wide leading-loose',

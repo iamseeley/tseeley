@@ -1,7 +1,7 @@
 import { cva, VariantProps } from 'class-variance-authority';
 
 const HeadingStyles = cva(
-  'font-medium', // common styles for all headings
+  'font-medium text-type-primary', // common styles for all headings
   {
     variants: {
       size: {

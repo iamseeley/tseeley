@@ -1,12 +1,12 @@
-
+import Text from "../Typography/TypographyText"
 
 
 export default function Header() {
     return (
-        <header>
+        <header className="mb-4">
             <div>
-                <h3>tseeley.com</h3>
-                <h4>Last updated Nov. 9th 10:40</h4>
+                <Text weight={'bold'} size={3}>tseeley.com</Text>
+                <Text weight={'bold'} color={'tertiary'} size={4} >Last updated Nov. 9th 10:40</Text>
             </div>
         </header>
     )
