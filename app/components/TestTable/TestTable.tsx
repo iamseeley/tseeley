@@ -50,7 +50,7 @@ const MainComponent = () => {
 
   // Render the filters, search bar, and table
   return (
-    <div className='my-2  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
+    <div className='my-2  overscroll-none  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
       <div className='sticky left-0'>
         <div className='px-4 pt-4 flex flex-row justify-between mb-4 gap-4 '>
             <div>
@@ -66,7 +66,7 @@ const MainComponent = () => {
       {/* Display tags and handle tag selection */}
         </div>
         </div>
-        <div className='w-full overscroll-none'>
+        <div className='w-full'>
           <Table columns={columns} data={filteredData} />
         </div>
     </div>
