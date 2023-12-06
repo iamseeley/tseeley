@@ -51,7 +51,7 @@ const MainComponent = () => {
   // Render the filters, search bar, and table
   return (
     <div className='my-2  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
-        <div className='px-4 pt-4 flex flex-row justify-between mb-4 gap-4 sticky left-0'>
+        <div className='px-4 pt-4 flex flex-row justify-between mb-4 gap-4 sticky left-0 '>
             <div>
             {/* <label className='font-medium' htmlFor='works'>Works </label> */}
             <select className=' bg-transparent border border-neutral-400 rounded-md pl-2 py-1 focus:outline-none focus:border-gray-500' id='works' name='works'>
@@ -64,7 +64,7 @@ const MainComponent = () => {
             <input className='pl-2 rounded-md w-40 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} />
       {/* Display tags and handle tag selection */}
         </div>
-        <div className='table-fixed w-full '>
+        <div className=' w-full '>
       <Table columns={columns} data={filteredData} />
       </div>
     </div>

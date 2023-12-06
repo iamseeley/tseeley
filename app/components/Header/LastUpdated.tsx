@@ -32,7 +32,7 @@ function formatDate(dateString: string): string {
   }
 
   // General date formatting
-  const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+  const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'EST' };
   return `Updated ${commitDate.toLocaleDateString('en-US', options)}`;
 }
 
