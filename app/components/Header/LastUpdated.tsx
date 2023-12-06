@@ -26,9 +26,9 @@ function formatDate(dateString: string): string {
 
   // Formatting for 'Today' or 'Yesterday'
   if (commitDate.toDateString() === now.toDateString()) {
-    return `Updated today at ${commitDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`;
+    return `Updated today at ${commitDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'EST' })}`;
   } else if (commitDate.toDateString() === yesterday.toDateString()) {
-    return `Updated yesterday at ${commitDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`;
+    return `Updated yesterday at ${commitDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'EST' })}`;
   }
 
   // General date formatting
