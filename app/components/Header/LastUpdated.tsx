@@ -10,7 +10,7 @@ interface Commit {
 }
 
 async function fetchLatestCommit() {
-  const res = await fetch('https://api.github.com/repos/iamseeley/tseeley/commits?sha=main', { next: { revalidate: 1600 } });
+  const res = await fetch('https://api.github.com/repos/iamseeley/tseeley/commits?sha=main', { next: { revalidate: 600 } });
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }

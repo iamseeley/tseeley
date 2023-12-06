@@ -22,14 +22,15 @@ export default function Home() {
       </section>
       <section className='my-6  pb-2'>
       <Text size={2}>Links</Text>
-        <div className='flex flex-row flex-wrap gap-2 mt-2'>
-          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2  rounded-full' href={'/about'}>about</Link>
-          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>cv</Link>
-          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>email</Link>
-          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>github</Link>
-          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>twitter/x</Link>
-          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>linkedin</Link>
-        </div>
+      <div className='flex flex-row flex-wrap gap-2 mt-2'>
+        <Link className='shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>about</Link>
+        <Link className='shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>cv</Link>
+        <Link className='shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>email</Link>
+        <Link className='shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>github</Link>
+        <Link className='shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>twitter/x</Link>
+        <Link className='shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>linkedin</Link>
+      </div>
+
       </section>
     </section>
   )
