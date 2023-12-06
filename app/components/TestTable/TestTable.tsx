@@ -52,7 +52,7 @@ const MainComponent = () => {
   return (
     <div className='my-2  overscroll-none  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
       <div className='sticky left-0'>
-        <div className='px-4 pt-4 flex flex-row justify-between mb-4 gap-4 '>
+        <div className='px-3 pt-3 flex flex-row justify-between mb-3 gap-4 '>
             <div>
             {/* <label className='font-medium' htmlFor='works'>Works </label> */}
             <select className=' bg-transparent border border-neutral-400 rounded-md pl-2 py-1 focus:outline-none focus:border-gray-500' id='works' name='works'>
@@ -62,7 +62,7 @@ const MainComponent = () => {
                 <option onClick={() => handleFilterChange('post')}>Posts</option>
             </select>
             </div>
-            <input className='pl-2 rounded-md w-24 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} />
+            <input className='pl-2  rounded-md w-32 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} />
       {/* Display tags and handle tag selection */}
         </div>
         </div>
