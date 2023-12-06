@@ -66,7 +66,7 @@ const MainComponent = () => {
       {/* Display tags and handle tag selection */}
         </div>
         </div>
-        <div className='w-full '>
+        <div className='w-full overscroll-none'>
           <Table columns={columns} data={filteredData} />
         </div>
     </div>
