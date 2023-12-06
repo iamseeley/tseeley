@@ -9,18 +9,28 @@ import MainComponent from './components/TestTable/TestTable'
 
 export default function Home() {
   return (
-    <section className="">
-      
+    <section>
+      <section  className="my-6 ">
       <H2>Thomas Seeley</H2>
       <div className=''>
       <Text size={2} spaced color='primary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minima officiis minus eveniet facere aliquam consequuntur accusantium nemo voluptatum! Vero, repellat. Ab, expedita quae ad hic consectetur dignissimos autem maxime.</Text>
       </div>
-      <section>
-        <H4>Works</H4>
+      </section>
+      <section className='my-6 pb-2 '>
+        <Text size={2}>Works</Text>
         <MainComponent />
       </section>
-      
-      
+      <section className='my-6  pb-2'>
+      <Text size={2}>Links</Text>
+        <div className='flex flex-row flex-wrap gap-2 mt-2'>
+          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2  rounded-full' href={'/about'}>about</Link>
+          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>cv</Link>
+          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>email</Link>
+          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>github</Link>
+          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>twitter/x</Link>
+          <Link className='leading-relaxed shadow-sm bg-neutral-100 pr-2 pl-2 rounded-full' href={'/about'}>linkedin</Link>
+        </div>
+      </section>
     </section>
   )
 }

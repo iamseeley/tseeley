@@ -50,7 +50,7 @@ const MainComponent = () => {
 
   // Render the filters, search bar, and table
   return (
-    <div className='my-4  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
+    <div className='my-2  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
         <div className='px-4 pt-4 flex flex-row justify-between mb-4 gap-4 sticky left-0'>
             <div>
             {/* <label className='font-medium' htmlFor='works'>Works </label> */}

@@ -30,7 +30,7 @@ const TextStyles = cva( 'font-medium',
 
 export interface TextProps extends
 		VariantProps<typeof TextStyles> {
-			children: string,
+			children: ReactNode,
 		}
 
 export default function Text({ children, size, color, spaced, weight, ...props }: TextProps) {
