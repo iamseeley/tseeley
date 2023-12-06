@@ -6,9 +6,18 @@
   :root {
     --brand: #8b5cf6;
     --background: #e5e5e5;
-    --foreground: #d4d4d454;
+    --foreground: #d4d4d46e;
     --typeface-primary: #0a0a0a;
     --typeface-secondary: #262626;
     --typeface-tertiary: #525252;
   }
+}
+
+/* Add your custom styles here */
+.table tr:nth-child(odd) {
+  @apply bg-none; /* Lighter color for odd rows */
+}
+
+.table tr:nth-child(even) {
+  @apply bg-neutral-300; /* Darker or different color for even rows */
 }
