@@ -52,15 +52,20 @@ const MainComponent = () => {
   return (
     <div className='my-2  overscroll-none  bg-foreground rounded-md border border-neutral-400 overflow-x-auto'>
       <div className='sticky left-0'>
-        <div className='px-3 pt-3 flex flex-row justify-between mb-3 gap-4 '>
+        <div className='px-4 pt-4 pb-1 flex flex-row justify-between mb-3 gap-4 '>
             <div>
             {/* <label className='font-medium' htmlFor='works'>Works </label> */}
-            <select className=' bg-transparent border border-neutral-400 rounded-md pl-2 py-1 focus:outline-none focus:border-gray-500' id='works' name='works'>
-              
-                <option onClick={() => handleFilterChange('all')}>All</option>
-                <option onClick={() => handleFilterChange('project')}>Projects</option>
-                <option onClick={() => handleFilterChange('post')}>Posts</option>
+            <select 
+                className='bg-transparent border border-neutral-400 rounded-md pl-2 focus:outline-none focus:border-gray-500' 
+                id='works' 
+                name='works'
+                onChange={(e) => handleFilterChange(e.target.value)}  // Use onChange here
+              >
+              <option value='all'>All</option>
+              <option value='project'>Projects</option>
+              <option value='post'>Posts</option>
             </select>
+
             </div>
             <input className='pl-2  rounded-md w-32 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} />
       {/* Display tags and handle tag selection */}
