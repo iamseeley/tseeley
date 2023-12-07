@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Define Props for the Table Component
 export interface TableColumn {
@@ -14,22 +13,23 @@ export interface TableProps {
 // Table Component
 const Table: React.FC<TableProps> = ({ columns, data }) => {
   return (
-    <table className="table min-w-full divide-y  divide-neutral-400">
+    <table className="table min-w-full divide-y divide-neutral-400">
       <thead className='bg-neutral-300'>
         <tr>
           {columns.map((column, idx) => (
-            <th key={idx} className="px-4 py-2 text-left text-xs font-medium  uppercase tracking-wider">
+            <th key={idx} className="px-4 py-2 text-left text-xs font-medium uppercase tracking-wider">
               {column.header}
             </th>
           ))}
         </tr>
       </thead>
-      <tbody className="m">
+      <tbody>
         {data.map((row, idx) => (
           <tr className='rounded-bl-sm' key={idx}>
             {columns.map((column, colIdx) => (
               <td key={colIdx} className="px-4 py-2 whitespace-nowrap rounded-bl-sm">
-                {row[column.accessor]}
+                {/* Access the metadata property from row */}
+                {row.metadata && row.metadata[column.accessor]}
               </td>
             ))}
           </tr>
@@ -40,3 +40,4 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
 };
 
 export default Table;
+

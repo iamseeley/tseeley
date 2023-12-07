@@ -4,7 +4,7 @@ import path from 'path';
 type Metadata = {
   type: string;
   title: string;
-  date: string;
+  date?: string;
   description?: string;
   link: string;
 };
@@ -52,5 +52,5 @@ function getMDXData(dir) {
 }
 
 export function getPosts() {
-  return getMDXData(path.join(process.cwd(), 'content'));
+  return getMDXData(path.join(process.cwd(), 'content', 'posts'));
 }
