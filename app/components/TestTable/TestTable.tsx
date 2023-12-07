@@ -56,7 +56,7 @@ const MainComponent = () => {
             <div>
             {/* <label className='font-medium' htmlFor='works'>Works </label> */}
             <select 
-                className='bg-transparent border border-neutral-400 rounded-md pl-2 focus:outline-none focus:border-gray-500' 
+                className='bg-transparent border border-neutral-400 rounded-md pl-2 w-24 ' 
                 id='works' 
                 name='works'
                 onChange={(e) => handleFilterChange(e.target.value)}  // Use onChange here
