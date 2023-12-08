@@ -16,7 +16,7 @@ export default function Home() {
       <H2>Thomas Seeley</H2>
       <div className=''>
       <Text size={2} spaced color='primary'>Currently exploring the world of software/web development, making little projects, and writing about programming and design.</Text>
-      <Card><Text size={2} spaced weight='normal' color='primary'>🎉 I am starting a part-time MSCS Program in January!</Text></Card>
+      <Card><Text size={2} weight='normal' color='primary'>🎉 I am starting a part-time MSCS Program in January!</Text></Card>
       </div>
       {/* <Callout>Looking for work</Callout> */}
       </section>
