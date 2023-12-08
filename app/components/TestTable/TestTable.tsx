@@ -5,10 +5,6 @@ import TableNav from './TableNav';
 import filteredData from './TableNav'
 
 
-// export async function getStaticProps() {
-  
-//   return { props: { initialData: data } };
-// }
 
 
 
@@ -51,9 +47,9 @@ export async function MainComponent()  {
         </div>
         </div> */}
         <TableNav data={data} />
-        <div className='w-full'>
+        {/* <div className='w-full'>
           <Table columns={columns} data={data} />
-        </div>
+        </div> */}
     </div>
   );
 };

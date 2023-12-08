@@ -1,8 +1,15 @@
 'use client'
 
 import React, { useState, useMemo } from 'react';
+import Table from './Ttable';
 
-
+const columns = [
+  { header: 'Type', accessor: 'type' },
+  { header: 'Title', accessor: 'title' },
+  { header: 'Date', accessor: 'date' },
+  { header: 'Description', accessor: 'description' },
+  { header: 'URL', accessor: 'link' },
+];
 
 export default function TableNav({ data }) {
   const [filter, setFilter] = useState('all'); // 'all', 'projects', 'posts'
@@ -12,15 +19,26 @@ export default function TableNav({ data }) {
   const filteredData = useMemo(() => {
     return data.filter(item => {
       // Filter by type
-      if (filter !== 'all' && item.type !== filter) return false;
-
+      if (filter !== 'all') {
+        const itemType = item.metadata?.type?.toLowerCase();
+        if (!itemType || itemType !== filter.toLowerCase()) {
+          return false;
+        }
+      }
+  
       // Filter by search term
-      if (searchTerm && !item.title.toLowerCase().includes(searchTerm.toLowerCase())) return false;
-
-
+      if (searchTerm) {
+        // Accessing title inside metadata
+        const title = item.metadata?.title?.toLowerCase() || '';
+        if (!title.includes(searchTerm.toLowerCase())) {
+          return false;
+        }
+      }
+  
       return true;
     });
   }, [filter, searchTerm, data]);
+  
 
  
   const handleFilterChange = (newFilter: string) => {
@@ -28,8 +46,9 @@ export default function TableNav({ data }) {
   };
 
   return (
-    <div className='sticky left-0'>
-        <div className='px-4 pt-4 pb-1 flex flex-row justify-between mb-3 gap-4 '>
+    <>
+        <div className='sticky left-0'>
+          <div className='px-4 pt-4 pb-1 flex flex-row justify-between mb-3 gap-4 '>
             <div>
             
             <select 
@@ -46,9 +65,13 @@ export default function TableNav({ data }) {
             </div>
             <input className='pl-2  rounded-md w-32 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} />
       
+          </div>
         </div>
+        <div className='w-full'>
+          <Table columns={columns} data={filteredData} />
         </div>
-
+        
+    </>
   )
 }
 
