@@ -4,8 +4,8 @@ import React, { useState, useMemo } from 'react';
 import Table from './Ttable';
 
 const columns = [
-  { header: 'Type', accessor: 'type' },
   { header: 'Title', accessor: 'title' },
+  { header: 'Type', accessor: 'type' },
   { header: 'Date', accessor: 'date' },
   { header: 'Description', accessor: 'description' },
   { header: 'URL', accessor: 'link' },

@@ -21,3 +21,4 @@
 .table tr:nth-child(even) {
   @apply bg-neutral-300; /* Darker or different color for even rows */
 }
+

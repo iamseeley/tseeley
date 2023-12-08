@@ -26,12 +26,12 @@ export default function Home() {
       <section className='my-6  pb-2'>
       <Text size={2}>Links</Text>
       <div className='flex flex-row flex-wrap gap-2 mt-2'>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>about</Link>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>cv</Link>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>email</Link>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>github</Link>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>twitter/x</Link>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'}>linkedin</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'} rel="noopener noreferrer">about</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/cv'} target="_blank" rel="noopener noreferrer">cv</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'mailto:hello@tseeley.com'} target="_blank" rel="noopener noreferrer">email</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'https://github.com/iamseeley'} target="_blank" rel="noopener noreferrer">github</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'https://twitter.com/iamseeley'} target="_blank" rel="noopener noreferrer">twitter/x</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'https://www.linkedin.com/in/thomas-seeley-3229b5205/'} target="_blank" rel="noopener noreferrer">linkedin</Link>
       </div>
 
       </section>

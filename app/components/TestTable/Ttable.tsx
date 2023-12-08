@@ -17,8 +17,15 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
       <thead className='bg-neutral-300'>
         <tr>
           {columns.map((column, idx) => (
-            <th key={idx} className="px-4 py-2 text-left text-xs font-medium uppercase tracking-wider">
+            <th 
+            key={idx} 
+            className={`px-4 py-2 text-left text-xs font-medium uppercase tracking-wider ${
+              column.accessor === 'title' ? ' fixed left-0 ' : ''
+            }`}
+          >
+           
               {column.header}
+            
             </th>
           ))}
         </tr>
@@ -27,7 +34,12 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
       {data.map((row, idx) => (
           <tr className='rounded-bl-sm' key={idx}>
             {columns.map((column, colIdx) => (
-              <td key={colIdx} className="px-4 py-2 whitespace-nowrap rounded-bl-sm">
+              <td 
+              key={colIdx} 
+              className={`px-4 py-2 whitespace-nowrap ${
+                column.accessor === 'title' ? 'fixed left-0 z-10' : ''
+              }`}
+            >
                 {column.accessor === 'link' ? (
                   row.metadata.type === 'project' ? (
                   
