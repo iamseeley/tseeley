@@ -6,6 +6,7 @@ import Text from './components/Typography/TypographyText'
 import { TableHead, TableBody, TableRow, TableCell } from './components/Table/Table'
 import Link from 'next/link'
 import MainComponent from './components/TestTable/TestTable'
+import Card from './components/Card/Card'
 import Callout from './components/Callout/Callout'
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       <H2>Thomas Seeley</H2>
       <div className=''>
       <Text size={2} spaced color='primary'>Currently exploring the world of software/web development, making little projects, and writing about programming and design.</Text>
-      <Text size={2} spaced color='primary'>I will be starting a part-time MSCS Program in January!</Text>
+      <Card><Text size={2} spaced weight='normal' color='primary'>🎉 I am starting a part-time MSCS Program in January!</Text></Card>
       </div>
       {/* <Callout>Looking for work</Callout> */}
       </section>
