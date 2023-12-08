@@ -20,7 +20,7 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
             <th 
             key={idx} 
             className={`px-4 py-2 text-left text-xs font-medium uppercase tracking-wider ${
-              column.accessor === 'title' ? ' fixed left-0 ' : ''
+              column.accessor === 'title' ? 'sticky left-0 ' : ''
             }`}
           >
            
@@ -37,7 +37,7 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
               <td 
               key={colIdx} 
               className={`px-4 py-2 whitespace-nowrap ${
-                column.accessor === 'title' ? 'fixed left-0 z-10' : ''
+                column.accessor === 'title' ? 'sticky left-0 z-10' : ''
               }`}
             >
                 {column.accessor === 'link' ? (
