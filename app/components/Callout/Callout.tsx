@@ -1,5 +1,5 @@
 import { cva, VariantProps } from 'class-variance-authority';
-import Card from '../Card/Card';
+
 
  const CalloutStyles = cva(
 	'',
@@ -31,8 +31,8 @@ export interface CalloutProps extends
 
 export default function Callout({ intent, children, fullWidth, centered, ...props }: CalloutProps) {
 	return (
-        <Card intent='secondary'>
+        
 		    <div className={CalloutStyles({ intent, fullWidth, centered })} {...props} >{children}</div>
-        </Card>
+        
 	);
 }
