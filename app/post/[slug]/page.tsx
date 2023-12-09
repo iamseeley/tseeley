@@ -4,47 +4,39 @@ import { Metadata } from "next";
 import { H2 } from "@/app/components/Typography/TypographyHeading";
 import { Mdx } from "@/app/components/Mdx/Mdx";
 
-// export async function generateMetadata({
-//     params,
-//   }): Promise<Metadata | undefined> {
-//     let post = getBlogPosts().find((post) => post.slug === params.slug);
-//     if (!post) {
-//       return;
-//     }
+export async function generateMetadata({
+    params,
+  }): Promise<Metadata | undefined> {
+    let post = getPosts().find((post) => post.slug === params.slug);
+    if (!post) {
+      return;
+    }
   
-//     let {
-//       title,
-//       publishedAt: publishedTime,
-//       summary: description,
-//       image,
-//     } = post.metadata;
-//     let ogImage = image
-//       ? `https://leerob.io${image}`
-//       : `https://leerob.io/og?title=${title}`;
+    let {
+      title,
+      date: date,
+      description: description,
+    } = post.metadata;
+    
   
-//     return {
-//       title,
-//       description,
-//       openGraph: {
-//         title,
-//         description,
-//         type: 'article',
-//         publishedTime,
-//         url: `https://leerob.io/blog/${post.slug}`,
-//         images: [
-//           {
-//             url: ogImage,
-//           },
-//         ],
-//       },
-//       twitter: {
-//         card: 'summary_large_image',
-//         title,
-//         description,
-//         images: [ogImage],
-//       },
-//     };
-//   }
+    return {
+      title,
+      description,
+      openGraph: {
+        title,
+        description,
+        type: 'article',
+        url: `https://tseeley.com/post/${post.slug}`,
+  
+      },
+      // twitter: {
+      //   card: 'summary_large_image',
+      //   title,
+      //   description,
+        
+      // },
+    };
+  }
 
 
 
@@ -57,7 +49,7 @@ export default function Post({ params }) {
     return (
         <section>
             <H2>{post.metadata.title}</H2>
-            <article className="leading-loose tracking-wide text-type-primary">
+            <article className="prose prose-headings:mt-4 text-type-primary">
                 <Mdx source={post.content} />
             </article>
         </section>
