@@ -28,7 +28,7 @@ export default function Home() {
       <Text size={2}>Links</Text>
       <div className='flex flex-row flex-wrap gap-2 mt-2'>
         <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/about'} rel="noopener noreferrer">about</Link>
-        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/cv'} target="_blank" rel="noopener noreferrer">cv</Link>
+        <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'/cv.pdf'} target="_blank" rel="noopener noreferrer">cv</Link>
         <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'mailto:hello@tseeley.com'} target="_blank" rel="noopener noreferrer">email</Link>
         <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'https://github.com/iamseeley'} target="_blank" rel="noopener noreferrer">github</Link>
         <Link className='hover:border-2 border-2 border-transparent hover:border-brand shadow-sm bg-neutral-100 px-2 py-1 rounded-full leading-none' href={'https://twitter.com/iamseeley'} target="_blank" rel="noopener noreferrer">twitter/x</Link>

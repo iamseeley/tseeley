@@ -5,10 +5,11 @@ import Table from './Ttable';
 
 const columns = [
   { header: 'Title', accessor: 'title' },
+  { header: 'URL', accessor: 'link' },
+  { header: 'Description', accessor: 'description' },
   { header: 'Type', accessor: 'type' },
   { header: 'Date', accessor: 'date' },
-  { header: 'Description', accessor: 'description' },
-  { header: 'URL', accessor: 'link' },
+  
 ];
 
 export default function TableNav({ data }) {
@@ -52,7 +53,7 @@ export default function TableNav({ data }) {
             <div>
             
             <select 
-                className='bg-transparent border border-neutral-400 rounded-md pl-2 w-24 ' 
+                className='bg-transparent border border-neutral-400 rounded-md pl-2 py-1 w-24 ' 
                 id='works' 
                 name='works'
                 onChange={(e) => handleFilterChange(e.target.value)}  // Use onChange here
@@ -63,7 +64,7 @@ export default function TableNav({ data }) {
             </select>
 
             </div>
-            <input className='pl-2  rounded-md w-32 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} />
+            {/* <input className='pl-2  rounded-md w-32 border bg-transparent border-neutral-400' type="text" placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} /> */}
       
           </div>
         </div>
