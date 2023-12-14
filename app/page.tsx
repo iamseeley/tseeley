@@ -18,7 +18,7 @@ export default function Home() {
       <div className='mb-10'>
       <Text size={2} spaced color='primary'>Exploring the world of software/web development, making little projects, and writing about programming and design.</Text>
       </div>
-      <div className='relative'><div className='shadow-sm pb-1 pl-1 pr-1 pt-1 text-xl bg-neutral-200 rounded-full absolute z-50 -left-4 -top-4 '><p className='text-2xl rounded-full pl-2 pr-2 p-1'>🎉</p></div></div>
+      <div className='relative'><div className=' pb-1 pl-1 pr-1 pt-1 text-xl bg-neutral-200 rounded-full absolute z-50 -right-4 -top-4 '><p className='text-2xl rounded-full pl-2 pr-2 p-1'>🎉</p></div></div>
       <div className=''><Card><Text size={2} weight='normal' color='primary'>Starting a part-time MSCS Program in January!</Text></Card></div>
       
       </div>
