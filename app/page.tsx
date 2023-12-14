@@ -15,7 +15,7 @@ export default function Home() {
       <section  className="my-6 ">
       <H2>Thomas Seeley</H2>
       <div className=''>
-      <div className='mb-10'>
+      <div className='mb-4'>
       <Text size={2} spaced color='primary'>Exploring the world of software/web development, making little projects, and writing about programming and design.</Text>
       </div>
       <div className='relative'><div className=' pb-1 pl-1 pr-1 pt-1 text-xl bg-neutral-200 rounded-full absolute z-50 -right-4 -top-4 '><p className='text-2xl rounded-full pl-2 pr-2 p-1'>🎉</p></div></div>
