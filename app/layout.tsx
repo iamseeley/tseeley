@@ -21,10 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx('bg-background',inter.className)}>
-      <body className='max-w-2xl mx-6 mt-2 antialiased'>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body className='max-w-2xl mx-auto mt-2 antialiased '>
+        <div className='mx-6'>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
