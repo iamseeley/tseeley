@@ -2,7 +2,7 @@ import { cva, VariantProps } from 'class-variance-authority';
 import { ReactNode } from 'react';
 
  const CardStyles = cva(
-	'flex justify-center   px-6 py-6 mt-4 rounded-lg',
+	'flex justify-center   px-4 py-4 mt-4 rounded-lg',
 	{
 		variants: {
 			intent: {
