@@ -18,14 +18,14 @@ export default function About() {
                 <Text size={2} spaced color='primary'>I use frameworks and libraries like React, Next.js and Tailwind CSS to create interactive, responsive web apps.</Text>
             </div>
             <div className='mb-4'>
-                <Text size={2} spaced color='primary'>Nowadays, I'm primarily coding in TypeScript, but I enjoy switching it up and building things with Go and Python.</Text>
+                <Text size={2} spaced color='primary'>Nowadays, I&apos;m primarily coding in TypeScript, but I enjoy switching it up and building things with Go and Python.</Text>
             </div>
             <div className='mb-4'>
                 <Text size={2} spaced color='primary'>I am currently looking for full-time roles as a front-end or full-stack developer. Please reach out via email <Link className="underline hover:decoration-brand" target="_blank" rel="noopener noreferrer" href="mailto:hell@tseeley.com">hello@tseeley.com</Link> if you would like to talk!</Text>
             </div>
             <div><H3>Future</H3></div>
             <div className='mb-4'>
-                <Text size={2} spaced color='primary'>In January 2024, I will be starting a part-time Master of Science in Computer Science program to further improve my programming skills and go deeper on some computer science topics i&apos;m interested in. </Text>
+                <Text size={2} spaced color='primary'>In January 2024, I will be starting a part-time Master of Science in Computer Science program to further improve my programming skills and go deeper on some computer science topics I&apos;m interested in. </Text>
             </div>
             
             <div><H3>Story Time</H3></div>
